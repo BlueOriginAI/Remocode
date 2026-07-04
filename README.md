@@ -4,14 +4,14 @@
 
 ### 终端优先的 macOS 原生 IDE — 为 Vibe Coding 而生
 
-离开工位时，用 iOS / Android App 继续指挥 Agent。
+离开工位时，用 iOS / Android App 或浏览器 Web Remote 继续指挥 Agent。
 
 [![最新版本](https://img.shields.io/github/v/release/BlueOriginAI/RemocodeIDE?label=最新版本&color=0071e3)](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)
 [![平台](https://img.shields.io/badge/macOS-14%2B-1d1d1f?logo=apple&logoColor=white)](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)
 [![架构](https://img.shields.io/badge/Apple%20Silicon-arm64-248a3d)](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)
 [![下载量](https://img.shields.io/github/downloads/BlueOriginAI/RemocodeIDE/total?label=下载量&color=5865f2)](https://github.com/BlueOriginAI/RemocodeIDE/releases)
 
-**[⬇️ 下载最新版](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)** · **[🌐 官网 ide.remocode.cc](https://ide.remocode.cc)** · **[📱 移动端远程控制](https://ide.remocode.cc/#remote)**
+**[⬇️ 下载最新版](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)** · **[🌐 官网 ide.remocode.cc](https://ide.remocode.cc)** · **[🖥 Web 远程控制](https://ide.remocode.cc/app)** · **[📱 移动端远程控制](https://ide.remocode.cc/#remote)**
 
 <br/>
 
@@ -32,7 +32,7 @@
 |  |  |  |
 | :-- | :-- | :-- |
 | **⌨️ Terminal-first** | **🌿 Git-aware** | **📡 Remote-ready** |
-| 启动即进入执行现场 | 变更树和 PR 都在右侧面板 | iOS / Android App 远程控制 Mac 工作区 |
+| 启动即进入执行现场 | 变更树和 PR 都在右侧面板 | iOS / Android App 和 Web Remote 远程控制 Mac 工作区 |
 
 ---
 
@@ -50,13 +50,17 @@ RemoCode 把终端会话、文件树、变更状态和上下文保留在 IDE 内
 ### 📱 移动端远程控制
 配套 iOS / Android App 后，人不在 Mac 前也能给 Claude Code、Codex 派任务、看进度、收结果，IDE 持续在线干活。
 
+### 🖥 Web 远程控制
+打开 **[https://ide.remocode.cc/app](https://ide.remocode.cc/app)**，粘贴 Mac 端生成的 pairing URL，即可在浏览器里连接你的 Mac，查看项目、Sessions、xterm 终端和 Git 变更/Diff，并上传图片或附件给当前终端会话。
+
 ---
 
 ## 人在外面，Agent 在 Mac 上继续干活
 
-打开 RemoCode iOS / Android App，扫码配对你的 Mac，就能在手机上发任务、盯进度、收结果，回到工位时改动已在 Git 面板里等你。
+打开 RemoCode iOS / Android App，或进入 **[Web Remote](https://ide.remocode.cc/app)**，配对你的 Mac，就能发任务、盯进度、收结果，回到工位时改动已在 Git 面板里等你。
 
 - **📱 手机就是遥控器** — 在 iOS / Android App 里发一条命令，Mac 上的 IDE 立即启动 Agent 开始执行。
+- **🖥 浏览器也能控制 Mac** — 打开 `https://ide.remocode.cc/app`，粘贴 Mac pairing URL，直接进入项目、Sessions、终端和 Git 视图。
 - **🔐 扫码配对，本机批准** — 配对信息保存在 Mac 和手机本机；首次连接需要在 Mac 上确认，无需账号或端口转发。
 - **📥 结果实时回传** — Agent 的执行进度、终端输出和变更摘要直接回到手机，随时接住上下文。
 
@@ -77,7 +81,7 @@ RemoCode    ● 已连接 · 当前无运行中任务 · 工作树 main 干净
 1. 打开项目后直接回到终端上下文
 2. 让 Agent 改代码，同时在文件树和 Git 面板里检查影响面
 3. 用树状变更视图整理提交，必要时切换 PR 和历史记录
-4. 出门后在 iOS / Android App 上继续给 Agent 派任务
+4. 出门后在 iOS / Android App 或 Web Remote 上继续给 Agent 派任务
 5. 回到工位后在 Git 面板里检查、整理并提交移动端触发的改动
 
 ---
@@ -97,7 +101,7 @@ RemoCode    ● 已连接 · 当前无运行中任务 · 工作树 main 干净
 
 ## RemoCode Pro
 
-RemoCode Pro 用于移动端远程控制。订阅在 iOS / Android App 内完成，由 App Store / Google Play 托管，无需注册账号。
+RemoCode Pro 用于手机与 Web 远程控制。订阅在 iOS / Android App 内完成，由 App Store / Google Play 托管，无需注册账号。
 详情与订阅见 **[ide.remocode.cc/#pricing](https://ide.remocode.cc/#pricing)**。
 
 ---
@@ -109,6 +113,6 @@ RemoCode Pro 用于移动端远程控制。订阅在 iOS / Android App 内完成
 
 <div align="center">
 
-**[官网](https://ide.remocode.cc)** · **[下载](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)** · **[移动端远程](https://ide.remocode.cc/#remote)** · **[RemoCode Pro](https://ide.remocode.cc/#pricing)**
+**[官网](https://ide.remocode.cc)** · **[Web Remote](https://ide.remocode.cc/app)** · **[下载](https://github.com/BlueOriginAI/RemocodeIDE/releases/latest)** · **[远程控制](https://ide.remocode.cc/#remote)** · **[RemoCode Pro](https://ide.remocode.cc/#pricing)**
 
 </div>
