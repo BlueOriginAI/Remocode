@@ -5,7 +5,7 @@ description: >-
   on-demand, disposable runtime (cloud sandbox, VM, SSH host, or local container)
   Orca creates fresh for each workspace. Use to stand up a new recipe end to end,
   fix an `environmentRecipes` entry in `remocode.yaml`, scaffold provider lifecycle
-  scripts, or resolve an `orca vm recipe doctor` failure. Use `orca-cli` for
+  scripts, or resolve an `orca vm recipe doctor` failure. Use `remocode-cli` for
   ordinary worktree and workspace creation with no recipe involved.
 ---
 
